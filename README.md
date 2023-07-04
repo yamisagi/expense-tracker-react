@@ -6,10 +6,9 @@
   <h2 align="center">Expense Tracker</h2>
 
   <p align="center">
-
     A simple React app to track your expenses. With this app, you can add your expenses and filter them by year.
-
   </p>
+
   <p>
     <a href="https://github.com/yamisagi/yamisagi"><strong>About Me 💙»</strong></a>
     <br />
@@ -30,21 +29,25 @@
   ```sh
   git clone
   ```
+
 - <strong>Install NPM packages</strong>
 
   ```sh
   npm install
   ```
+
 - <strong>Run the project</strong>
 
   ```sh
   npm start
   ```
+
 - <strong>Open the project on your browser</strong>
 
   ```sh
   http://localhost:3000/
   ```
+
 - ### <strong>Enjoy! 🎉</strong>
 
 <br/>
@@ -69,7 +72,6 @@ In this repository, I will build a simple React app to track your expenses. With
 <p align="center">(Still working on it...)</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- ACKNOWLEDGMENTS
 ## Acknowledgments
