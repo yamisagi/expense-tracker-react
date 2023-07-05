@@ -70,6 +70,8 @@ In this repository, I will build a simple React app to track your expenses. With
 - [x] Project Setup
 - [x] Adding a New Expense Component
 - [x] Add SCSS to the project
+- [x] Create Expense Item Component & ExpenseCalendar Component
+
 
 
 <p align="center">(Still working on it...)</p>

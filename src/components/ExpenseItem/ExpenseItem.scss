@@ -5,8 +5,8 @@
 }
 
 @mixin box-shadow($offset-x, $offset-y, $blur-radius, $spread-radius, $color) {
-    box-shadow: $offset-x $offset-y $blur-radius $spread-radius rgba($color, 0.25);
-  }
+  box-shadow: $offset-x $offset-y $blur-radius $spread-radius rgba($color, 0.25);
+}
 
 @mixin background-color($color) {
   background-color: $color;
@@ -16,22 +16,29 @@
   font-size: $size;
   font-weight: $weight;
   color: $color;
+  
 }
 
 .expense-item {
   @include center-flex();
   @include box-shadow(0, 2px, 8px, 0, #000);
   padding: 0.5rem;
-  margin: 1rem 0;
+  margin: 2rem 10rem;
   border-radius: 12px;
 
   @include background-color(#4b4b4b);
-  min-width: 50rem;
+  min-width: 25rem;
 
   h2 {
-    @include font-style(1rem, normal, white);
+    @include font-style(1.2rem, bold, white);
     flex: 1;
-    margin: 0 1rem;
+    margin: 0 5rem;
+  }
+  @media (min-width: 580px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 20rem;
   }
 }
 
@@ -58,6 +65,8 @@
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;
+  min-width: 9rem;
+  text-align: center;
 
   @media (min-width: 580px) {
     @include font-style(1.25rem, bold, white);
