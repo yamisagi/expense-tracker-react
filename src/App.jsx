@@ -1,4 +1,4 @@
-import ExpenseItem from './components/ExpenseItem/ExpenseItem';
+import Expenses from './components/Expenses/Expenses';
 import './style/App.scss'
 
 function App() {
@@ -31,9 +31,7 @@ function App() {
   ];
   return (
     <>
-      {expenses.map((expense) => (
-        <ExpenseItem key={expense.id} props={expense} />
-      ))}
+      <Expenses expenses={expenses} />
     </>
   )
 }
