@@ -2,10 +2,11 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  height: 100%;
+  width: 100%;
   color-scheme: light dark;
   color: #ffffffde;
-  background-color: #1e1e1e;
+  background-color: #b8a2a2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -1,0 +1,24 @@
+@mixin center-flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin strech-flex() {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  
+  @mixin box-shadow($offset-x, $offset-y, $blur-radius, $spread-radius, $color) {
+    box-shadow: $offset-x $offset-y $blur-radius $spread-radius rgba($color, 0.25);
+  }
+  
+  @mixin background-color($color) {
+    background-color: $color;
+  }
+  
+  @mixin font-style($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }

@@ -30,9 +30,12 @@ function App() {
     },
   ];
   return (
-    <>
+    <div className='main'>
+
       <Expenses expenses={expenses} />
-    </>
+
+    </div>
+
   )
 }
 

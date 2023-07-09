@@ -1,6 +1,7 @@
 import './ExpenseItem.scss'
 import ExpenseCalendar from '../ExpenseCalendar/ExpenseCalendar';
 import PropTypes from 'prop-types';
+import Card from '../Card/Card';
 
 
 const ExpenseItem = ({ title, amount, date }) => {

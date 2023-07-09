@@ -1,0 +1,17 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
+.card {
+  @include box-shadow(0, 2px, 8px, 0, $color-secondary);
+  padding: 0.5rem;
+  border-radius: 12px;
+  min-width: 35rem;
+  max-width: 40rem;
+
+  @include background-color($color-primary);
+
+  @media (max-width: 580px) {
+    margin: 2rem;
+    min-width: 15rem;
+  }
+}
