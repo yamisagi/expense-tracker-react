@@ -1,11 +1,8 @@
 import './ExpenseItem.scss'
-import ExpenseCalendar from '../ExpenseCalendar/ExpenseCalendar';
-import PropTypes from 'prop-types';
-import Card from '../Card/Card';
-
+import ExpenseCalendar from '../expense-calendar/ExpenseCalendar';
 
 const ExpenseItem = ({ title, amount, date }) => {
-
+    
     return (
         <div className='expense-item'>
             <ExpenseCalendar date={date} />

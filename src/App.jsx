@@ -1,4 +1,5 @@
 import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/new-expense/NewExpense';
 import './style/App.scss'
 
 function App() {
@@ -30,8 +31,8 @@ function App() {
     },
   ];
   return (
-    <div className='main'>
-
+    <div className=''>
+      <NewExpense></NewExpense>
       <Expenses expenses={expenses} />
 
     </div>

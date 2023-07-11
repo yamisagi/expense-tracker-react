@@ -1,0 +1,30 @@
+@import "../../style/variables.scss";
+
+.new-expense__controls {
+  display: $new-expense-controls-display;
+  flex-wrap: $new-expense-controls-flex-wrap;
+  gap: $new-expense-controls-gap;
+  margin-bottom: $new-expense-controls-margin-bottom;
+  text-align: $new-expense-controls-text-align;
+  align-items: $new-expense-controls-align-items;
+  justify-content: $new-expense-control-justify-content;
+
+  label {
+    font-weight: $new-expense-control-label-font-weight;
+    margin-bottom: $new-expense-control-label-margin-bottom;
+    display: $new-expense-control-label-display;
+  }
+
+  input {
+    font: $new-expense-control-input-font;
+    padding: $new-expense-control-input-padding;
+    border-radius: $new-expense-control-input-border-radius;
+    border: $new-expense-control-input-border;
+    width: $new-expense-control-input-width;
+    max-width: $new-expense-control-input-max-width;
+  }
+}
+
+.new-expense__actions {
+  text-align: $new-expense-actions-text-align;
+}

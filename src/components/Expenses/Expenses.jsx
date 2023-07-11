@@ -1,6 +1,6 @@
 import './Expenses.scss'
 
-import ExpenseItem from '../ExpenseItem/ExpenseItem';
+import ExpenseItem from '../expense-item/ExpenseItem';
 import Card from '../Card/Card';
 
 const Expenses = ({ expenses }) => {

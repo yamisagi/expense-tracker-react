@@ -71,6 +71,9 @@ In this repository, I will build a simple React app to track your expenses. With
 - [x] Adding a New Expense Component
 - [x] Add SCSS to the project
 - [x] Create Expense Item Component & ExpenseCalendar Component
+- [x] Create ExpenseForm Component & NewExpense Component
+- [x] Add useState to the project & Add Expense Data
+- [x] Add useRef to the project & Use it for Form
 
 
 
