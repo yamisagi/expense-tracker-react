@@ -17,23 +17,45 @@ const ExpenseForm = () => {
     }
 
     const titleChangeHandler = (event) => {
-        setExpense({
-            ...expense,
-            title: event.target.value
+        setExpense((prevState) => {
+            return {
+                ...prevState,
+                title: event.target.value
+            }
+            
         })
     }
-    
+
     const amountChangeHandler = (event) => {
-        setExpense({
-            ...expense,
-            amount: event.target.value
+        setExpense((prevState) => {
+            return {
+                ...prevState,
+                amount: event.target.value
+            }
         })
     }
     const dateChangeHandler = (event) => {
-        setExpense({
-            ...expense,
-            date: event.target.value
+        // setExpense({
+        //     ...expense,
+        //     date: event.target.value
+        // })
+
+        // Yukarıdaki yöntemi yapmak yerine, önceki state'i alıp, sadece date'i değiştirebiliriz.
+        // Böylece daha önceki state'in diğer değerlerini de korumuş oluruz.
+        // Bir diğer deyişle, React işleyişinde State'ler scheduled olarak değiştirilir.
+        // Ve bu scheduled değişiklikler, bir sonraki render'da uygulanır. Bazı durumlarda;
+        // Çok fazla state güncellemesi planlanmışsa dönen state doğru olmayabilir.
+        // Bu yüzden, state'i güncellerken, önceki state'i alıp, sadece değiştirmek istediğimiz değeri değiştirmeliyiz.
+        // Bu doğru bir yaklaşım olur.
+
+        setExpense((prevState) => {
+            console.log(prevState);
+            return {
+                ...prevState,
+                date: event.target.value
+            }
         })
+
         console.log(expense);
     }
     return (
