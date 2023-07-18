@@ -75,6 +75,9 @@ In this repository, I will build a simple React app to track your expenses. With
 - [x] Add useState to the project & Add Expense Data
 - [x] Add useRef to the project & Use it for Form
 - [x] Use Previous State & Add Expense Data
+- [x] Add UUID to the project & Add ID to the Expense Data
+- [x] Add Two-Way Binding & Clear Form
+- [x] Create Home Page 
 
 
 
