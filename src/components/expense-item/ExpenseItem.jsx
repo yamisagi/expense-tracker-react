@@ -2,7 +2,7 @@ import './ExpenseItem.scss'
 import ExpenseCalendar from '../expense-calendar/ExpenseCalendar';
 
 const ExpenseItem = ({ title, amount, date }) => {
-    
+    date = new Date(date);
     return (
         <div className='expense-item'>
             <ExpenseCalendar date={date} />
