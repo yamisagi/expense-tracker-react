@@ -9,21 +9,41 @@ const Expenses = ({ expenses }) => {
   const getFullYear = new Date().getFullYear().toString();
   const [filteredYear, setFilteredYear] = useState(getFullYear);
 
+  const filteredExpenses = expenses.filter((expense) => {
+    const date = expense.date;
+    const actualDate = new Date(date);
+    return actualDate.getFullYear().toString() === filteredYear;
+  });
   const filterChangeHandler = (selectedYear) => {
     console.log(selectedYear.target.value);
     setFilteredYear(selectedYear.target.value);
   };
+
+  let expensesContent = (
+    <div style={{ textAlign: "center" }}>No expenses found.</div>
+  );
+
+  if (filteredExpenses.length > 0) {
+    expensesContent = filteredExpenses.map((expense) => {
+      return (
+        <ExpenseItem
+          key={expense.id}
+          title={expense.title}
+          amount={expense.amount}
+          date={expense.date}
+        />
+      );
+    });
+  }
   return (
     <Card className="expenses">
       <ExpenseFilter
         filteredYear={filteredYear}
         onChangeFilter={filterChangeHandler}
+        // TODO: Use this later
+        // activateFilter={activateFilter}
       />
-      {expenses.map((expense) => (
-        <ExpenseItem key={expense.id} {...expense} />
-        // Spread Operator'ü ile expense objesinin tüm özelliklerini ExpenseItem'a gönderiyoruz.
-        // Yani bir nevi <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date} /> yazmış gibi oluyoruz.
-      ))}
+      {expensesContent}
     </Card>
   );
 };
