@@ -1,17 +1,16 @@
 @import "../../style/variables.scss";
 @import "../../style/mixins.scss";
 
-.expenses { 
+.expenses {
   background-color: $color-primary;
   flex-direction: column;
   margin: 5rem;
-  min-width: 50rem;
+  min-width: 35rem;
 
-  @media (min-width: 580px) {
+  @media (max-width: 580px) {
     justify-content: center;
     align-items: center;
-    margin: 5rem;
-    max-width: none;
+    margin: 2rem;
+    min-width: 22rem;
   }
-
 }
