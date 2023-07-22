@@ -2,10 +2,7 @@ import React, { useEffect } from "react";
 
 import "./ExpenseFilter.scss";
 
-const ExpensesFilter = ({
-  onChangeFilter,
-  filteredYear,
-}) => {
+const ExpensesFilter = ({ onChangeFilter, filteredYear }) => {
   const filterChangeHandler = (selectedYear) => {
     onChangeFilter(selectedYear);
   };
@@ -15,7 +12,7 @@ const ExpensesFilter = ({
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">
-        <label>Filter by year</label>
+        <label>Yıla göre filtrele</label>
         <select value={filteredYear} onChange={filterChangeHandler}>
           <option value="2023">2023</option>
           <option value="2022">2022</option>

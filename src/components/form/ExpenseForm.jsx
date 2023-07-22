@@ -43,7 +43,7 @@ const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
         setExpense((prevState) => {
           return {
             ...prevState,
-            amount: value,
+            amount: +value, // Fix for amount input type
           };
         });
         break;
@@ -51,7 +51,7 @@ const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
         setExpense((prevState) => {
           return {
             ...prevState,
-            date: value,
+            date: new Date(value), // Fix for date input type
           };
         });
         break;

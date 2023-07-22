@@ -45,7 +45,7 @@ const NewExpense = ({ addExpenseHandler }) => {
           onCancel={handleFormVisibility}
         />
       ) : (
-        <button onClick={handleFormVisibility}>Add New Expense</button>
+        <button onClick={handleFormVisibility}>Yeni Harcama Ekle</button>
       )}
     </div>
   );

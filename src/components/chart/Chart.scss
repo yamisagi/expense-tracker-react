@@ -1,0 +1,12 @@
+@import "../../style/variables.scss";
+
+.chart {
+  padding: $chart-padding;
+  border-radius: $chart-border-radius;
+  background-color: $chart-background-color;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: $chart-height;
+  color: #000;
+}

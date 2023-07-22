@@ -1,10 +1,32 @@
 // Dark Theme Colors
-
+// COLORS
 $color-primary: #1e1e1e;
 $color-secondary: #2d2d2d;
 $color-card: #6d6d6d;
 $color-white: #ffffff;
 
+// CHART
+
+$chart-height: 10rem;
+$chart-padding: 1rem;
+$chart-border-radius: 12px;
+$chart-background-color: #f8dfff;
+
+
+// CHART-BAR
+
+$chart-bar-height: 100%;
+$chart-bar-inner-height: 100%;
+$chart-bar-inner-width: 100%;
+$chart-bar-fill-width: 100%;
+$chart-bar-border-radius: 12px;
+$chart-bar-border: 1px solid #313131;
+$chart-bar-background-color: #c3b4f3;
+$chart-bar-fill-background-color: #4826b9;
+$chart-bar-fill-transition: all 0.3s ease-out;
+
+
+// NEW EXPENSE
 $new-expense-background-color: #a892ee;
 $new-expense-padding: 1rem;
 $new-expense-margin: 2rem;

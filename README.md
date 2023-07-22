@@ -77,12 +77,15 @@ In this repository, I will build a simple React app to track your expenses. With
 - [x] Use Previous State & Add Expense Data
 - [x] Add UUID to the project & Add ID to the Expense Data
 - [x] Add Two-Way Binding & Clear Form
-- [x] Create Home Page 
+- [x] Create Home Page
 - [x] Add Filter Component & Filter by Year
 - [x] Implement Filter Logic
 - [x] Add Conditional Return Statements
-
-
+- [x] Add Expenses Chart Component
+- [x] Add Chart Component
+- [x] Add Chart to the Home Page
+- [x] Project Done 🎉
+- [x] Deploy the project to Netlify 🚀
 
 <p align="center">(Still working on it...)</p>
 

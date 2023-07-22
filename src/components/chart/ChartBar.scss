@@ -1,0 +1,33 @@
+@import "../../style/variables.scss";
+
+.chart-bar {
+  height: $chart-bar-height;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__inner {
+    height: $chart-bar-inner-height;
+    width: $chart-bar-inner-width;
+    border: $chart-bar-border;
+    border-radius: $chart-bar-border-radius;
+    background-color: $chart-bar-background-color;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__fill {
+    background-color: $chart-bar-fill-background-color;
+    width: $chart-bar-fill-width;
+    transition: $chart-bar-fill-transition;
+  }
+
+  &__label {
+    font-weight: bold;
+    font-size: 0.5rem;
+    text-align: center;
+    
+  }
+}

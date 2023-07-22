@@ -1,9 +1,9 @@
-import "./Expenses.scss";
-
 import { useState } from "react";
 import Card from "../Card/Card";
 import ExpenseFilter from "../expense-filter/ExpenseFilter";
 import ExpensesList from "../expenses-list/ExpensesList";
+import ExpensesChart from "../expenses-chart/ExpensesChart";
+import "./Expenses.scss";
 
 const Expenses = ({ expenses }) => {
   const getFullYear = new Date().getFullYear().toString();
@@ -27,6 +27,7 @@ const Expenses = ({ expenses }) => {
         // TODO: Use this later
         // activateFilter={activateFilter}
       />
+      <ExpensesChart expenses={filteredExpenses} />
       <ExpensesList expenses={filteredExpenses} />
     </Card>
   );
