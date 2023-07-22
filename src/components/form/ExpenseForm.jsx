@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 
 import "./ExpenseForm.scss";
 
-const ExpenseForm = ({ onSaveExpenseData }) => {
+const ExpenseForm = ({ onSaveExpenseData, onCancel }) => {
   const formRef = useRef(null);
   const [expense, setExpense] = useState({
     title: "",
@@ -95,6 +95,15 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
       <div className="new-expense__actions">
         <button form="expense" type="submit">
           Ekle
+        </button>
+        <button
+          type="button"
+          form="expense"
+          onClick={() => {
+            onCancel();
+          }}
+        >
+          İptal
         </button>
       </div>
     </form>

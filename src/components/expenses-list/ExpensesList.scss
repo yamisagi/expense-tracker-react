@@ -1,0 +1,11 @@
+@import "../../style/variables.scss";
+
+.expenses-list {
+  list-style: none;
+  padding: 0;
+
+  &__fallback {
+    color: $color-white;
+    text-align: center;
+  }
+}

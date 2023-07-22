@@ -80,6 +80,7 @@ In this repository, I will build a simple React app to track your expenses. With
 - [x] Create Home Page 
 - [x] Add Filter Component & Filter by Year
 - [x] Implement Filter Logic
+- [x] Add Conditional Return Statements
 
 
 

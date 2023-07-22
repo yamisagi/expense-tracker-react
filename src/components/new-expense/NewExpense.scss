@@ -1,4 +1,4 @@
-@import '../../style/variables.scss'; 
+@import "../../style/variables.scss";
 
 .new-expense {
   background-color: $new-expense-background-color;
@@ -36,5 +36,11 @@
       background-color: #510674;
       border-color: #510674;
     }
+  }
+
+  @media (max-width: 500px) {
+    width: 22rem;
+    margin: 1rem;
+    max-width: 90dvw;
   }
 }
